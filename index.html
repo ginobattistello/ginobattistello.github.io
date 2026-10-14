@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name — Academic Homepage</title>
+  <meta name="description" content="Academic homepage of Your Name: research, publications, teaching and CV.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav>
+      <a class="brand" href="#top">Your Name</a>
+      <ul>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- ABOUT -->
+    <section class="intro">
+      <img class="portrait" src="assets/photo.jpg" alt="Portrait of Your Name" onerror="this.style.display='none'">
+      <div>
+        <h1>Your Name</h1>
+        <p class="role">PhD Candidate · Department of Something · University of Somewhere</p>
+        <p>
+          I work on <strong>your research area</strong>, with a focus on a specific question or method.
+          Before my PhD, I studied at Previous Institution. Replace this paragraph with two or three
+          sentences that tell a visitor what you do and why it matters.
+        </p>
+        <p class="links">
+          <a href="mailto:you@university.edu">Email</a>
+          <a href="https://scholar.google.com/">Google Scholar</a>
+          <a href="https://orcid.org/">ORCID</a>
+          <a href="https://github.com/">GitHub</a>
+          <a href="assets/cv.pdf">CV (PDF)</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- NEWS -->
+    <section>
+      <h2>News</h2>
+      <ul class="news">
+        <li><time>Oct 2026</time> Paper accepted at Conference Name.</li>
+        <li><time>Jun 2026</time> Presented my work at Workshop Name.</li>
+        <li><time>Sep 2025</time> Started my PhD at University of Somewhere.</li>
+      </ul>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research">
+      <h2>Research Interests</h2>
+      <p>Topic one · Topic two · Topic three · Topic four</p>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications">
+      <h2>Publications</h2>
+      <h3>Journal articles</h3>
+      <ol class="pubs" reversed>
+        <li>
+          <strong>Your Name</strong>, Coauthor A, Coauthor B. (2026).
+          <span class="title">Title of the paper</span>.
+          <em>Journal Name</em>, 12(3), 45–67.
+          <a href="https://doi.org/">DOI</a> · <a href="#">PDF</a>
+        </li>
+      </ol>
+      <h3>Conference papers</h3>
+      <ol class="pubs" reversed>
+        <li>
+          Coauthor A, <strong>Your Name</strong>. (2025).
+          <span class="title">Title of the paper</span>.
+          In <em>Proceedings of Conference Name</em>.
+          <a href="#">PDF</a> · <a href="#">Code</a>
+        </li>
+      </ol>
+    </section>
+
+    <!-- TEACHING -->
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <dl class="entries">
+        <dt>2025–2026</dt>
+        <dd><strong>Course Title</strong> (Teaching Assistant), University of Somewhere</dd>
+        <dt>2024–2025</dt>
+        <dd><strong>Course Title</strong> (Tutor), University of Somewhere</dd>
+      </dl>
+    </section>
+
+    <!-- CV -->
+    <section id="cv">
+      <h2>Curriculum Vitae</h2>
+      <h3>Education</h3>
+      <dl class="entries">
+        <dt>2025–present</dt>
+        <dd><strong>PhD in Field</strong>, University of Somewhere<br><span class="muted">Advisor: Prof. Name</span></dd>
+        <dt>2023–2025</dt>
+        <dd><strong>MSc in Field</strong>, Previous University</dd>
+        <dt>2020–2023</dt>
+        <dd><strong>BSc in Field</strong>, Previous University</dd>
+      </dl>
+      <h3>Awards &amp; Grants</h3>
+      <dl class="entries">
+        <dt>2026</dt>
+        <dd>Name of Award, Awarding Body</dd>
+      </dl>
+      <h3>Talks</h3>
+      <dl class="entries">
+        <dt>2026</dt>
+        <dd>“Talk title”, Venue, City</dd>
+      </dl>
+      <p><a class="button" href="assets/cv.pdf">Download full CV (PDF)</a></p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Department of Something, University of Somewhere<br>
+        Office 123, Street Address, City<br>
+        <a href="mailto:you@university.edu">you@university.edu</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year">2026</span> Your Name · Last updated October 2026</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
