@@ -1,0 +1,51 @@
+# Research experience, newest first.
+# Fields (all optional except date and title):
+#   date, duration, title, subtitle (project title), people, place, notes (list of extra lines), url
+- date: 2023 – present
+  title: PhD Student
+  subtitle: "Unravelling the impact of affective states on creativity: a neurocognitive investigation"
+  people: "Supervisor: Dr. Alizée Lopez-Persem"
+  place: Paris Brain Institute (ICM) – FrontLab – CreaTeam
+
+- date: 2022 – 2023
+  duration: 6 months
+  title: Graduate internship, Research assistant
+  subtitle: Generalization of the role of subjective valuation in creativity
+  people: "Supervisor: Dr. Alizée Lopez-Persem"
+  place: Paris Brain Institute (ICM) – FrontLab – CreaTeam
+
+- date: "2022"
+  duration: 2 months
+  title: Internship
+  subtitle: Electrophysiological source localization during gait inhibition
+  people: "Supervisors: Dr. Nathalie George, Déborah Ziri"
+  place: Paris Brain Institute (ICM) – Experimental Neurosurgery
+
+- date: 2021 – 2022
+  duration: 1 year
+  title: Internship
+  subtitle: Interpersonal synchrony as a substrate of emotion alignment
+  people: "Supervisors: Dr. Julie Grèzes, Victor Chung"
+  place: Laboratory of Cognitive and Computational Neurosciences (LNC2) – Social Cognition group
+
+- date: "2021"
+  title: Undergraduate internship, then Research engineer
+  subtitle: Broca's involvement in language fluency
+  notes:
+    - "Followed by 3 months as research engineer: evaluation of cognitive and motor abilities"
+  people: "Supervisor: Dr. Irene Cristofori"
+  place: Marc Jeannerod Institute of Cognitive Sciences (ISC) – CNRS, Lyon
+
+- date: "2021"
+  duration: 2 months
+  title: Internship
+  subtitle: Cognitive and cerebral bases of auditory hallucinations in schizophrenia
+  people: "Supervisor: Dr. Marine Mondino"
+  place: Lyon Neuroscience Research Center (CRNL) – PSYR2 team
+
+- date: "2020"
+  duration: 1 month
+  title: Internship
+  subtitle: Introduction to clinical research
+  people: "Supervisors: Dr. Alice Poisson, Dr. Caroline Demily"
+  place: CH Le Vinatier & Marc Jeannerod Institute of Cognitive Sciences (ISC), Lyon

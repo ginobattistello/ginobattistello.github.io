@@ -1,0 +1,19 @@
+{% comment %}
+  One publication. Usage:  {% assign pub = … %}{% include publication.html %}
+{% endcomment %}
+{% assign me = site.data.profile.author_name %}
+{% capture me_bold %}<strong>{{ me }}</strong>{% endcapture %}
+<li class="pub">
+  <span class="pub-year">{{ pub.year }}</span>
+  <div>
+    <p class="pub-title">{% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</p>
+    <p class="pub-authors">{{ pub.authors | replace: me, me_bold }}</p>
+    <p class="pub-venue"><em>{{ pub.venue }}</em>{% if pub.details %}, {{ pub.details }}{% endif %}</p>
+    {% if pub.doi or pub.links %}
+    <p class="pub-links">
+      {% if pub.doi %}<a class="chip" href="https://doi.org/{{ pub.doi }}">DOI</a>{% endif %}
+      {% for l in pub.links %}<a class="chip" href="{{ l.url | relative_url }}">{{ l.label }}</a>{% endfor %}
+    </p>
+    {% endif %}
+  </div>
+</li>

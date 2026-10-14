@@ -1,0 +1,80 @@
+# Talks and posters, grouped by work: one entry per abstract, with every venue it was shown at.
+# Newest first. venue type is "Talk" or "Poster"; add  note: Prize  to show a prize badge.
+- year: "2026"
+  authors: Battistello, G., Tang, J. & Lopez-Persem, A.
+  title: The modulatory role of emotions on creativity through the lens of individual preferences
+  venues:
+    - type: Poster
+      name: Symposium on the Biology of Decision Making (SBDM)
+      place: Paris, France
+      year: "2026"
+
+- year: "2025"
+  authors: Battistello, G., Tang, J., Vinckier, F. & Lopez-Persem, A.
+  title: How is mood related to creative idea evaluation?
+  venues:
+    - type: Poster
+      name: Society for the Neuroscience of Creativity (SfNC)
+      place: Paris, France
+      year: "2025"
+
+- year: "2025"
+  authors: Battistello, G., Tang, J., Vinckier, F. & Lopez-Persem, A.
+  title: "Dissecting decision processes of creativity in depression: preserved valuation mechanisms aside from altered monitoring of goal-directed dimensions"
+  venues:
+    - type: Poster
+      name: Symposium on the Biology of Decision Making (SBDM)
+      place: Lyon, France
+      year: "2025"
+
+- year: "2024"
+  authors: Battistello, G., Moreno-Rodriguez, S., Volle, E. & Lopez-Persem, A.
+  title: Domain-generalization of valuation in creative ideation
+  venues:
+    - type: Talk
+      name: Society for the Neuroscience of Creativity (SfNC)
+      place: Toronto, Canada
+      year: "2024"
+    - type: Poster
+      name: Cognitive Neuroscience Society (CNS)
+      place: Toronto, Canada
+      year: "2024"
+    - type: Poster
+      name: Society for NeuroEconomics (SNE)
+      place: Lisbon, Portugal
+      year: "2024"
+    - type: Poster
+      name: Marconi Institute for Creativity (MIC)
+      place: Cagliari, Italy
+      year: "2024"
+    - type: Poster
+      name: Orbitofrontal Cortex meeting (OFC)
+      place: Paris, France
+      year: "2024"
+
+- year: "2023"
+  authors: Battistello, G., Moreno-Rodriguez, S., Volle, E. & Lopez-Persem, A.
+  title: Generalization of the role of subjective valuation in creativity
+  venues:
+    - type: Poster
+      name: Ajité·es poster session, Paris Brain Institute (ICM)
+      place: Paris, France
+      year: "2023"
+      note: Poster Prize
+    - type: Poster
+      name: Colloque Jeunes Chercheurs (CJC FRESCO)
+      place: Paris, France
+      year: "2023"
+    - type: Poster
+      name: Forum of Cognitive Sciences (FSC)
+      place: Paris, France
+      year: "2023"
+
+- year: "2022"
+  authors: Chung, V., Battistello, G., Pacherie, E., Mennella, R. & Grèzes, J.
+  title: "Implicit and explicit mechanisms of collective emotion: moderators and correlates of interpersonal emotion alignment in dyads watching film clips together"
+  venues:
+    - type: Talk
+      name: Central European Cognitive Science Association (DUCOG 2022)
+      place: Dubrovnik, Croatia
+      year: "2022"

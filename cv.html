@@ -1,0 +1,30 @@
+---
+layout: page
+title: CV
+permalink: /cv/
+lead: Education, training and awards. Research, publications, talks, teaching and outreach each have their own page.
+---
+<p class="cta"><a class="button" href="{{ '/assets/cv.pdf' | relative_url }}">Download full CV (PDF)</a></p>
+
+<section class="block">
+  <h2>Education</h2>
+  {% assign entries = site.data.education.degrees %}
+  {% include entries.html %}
+</section>
+
+<section class="block">
+  <h2>Summer schools & additional training</h2>
+  {% assign entries = site.data.education.training %}
+  {% include entries.html %}
+</section>
+
+<section class="block">
+  <h2>Awards & grants</h2>
+  {% assign entries = site.data.education.awards %}
+  {% include entries.html %}
+</section>
+
+<section class="block">
+  <h2>Languages</h2>
+  <p class="languages">{{ site.data.education.languages | join: " · " }}</p>
+</section>

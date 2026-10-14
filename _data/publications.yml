@@ -1,0 +1,23 @@
+# Peer-reviewed articles, newest first.
+# Fields: year, authors, title, venue, details, doi, links (list of label/url, e.g. PDF, code, data)
+articles:
+  - year: "2025"
+    authors: Battistello, G., Moreno-Rodriguez, S., Volle, E. & Lopez-Persem, A.
+    title: Subjective valuation as a domain-general process in creative thinking
+    venue: Communications Psychology
+    details: 3, 108
+    doi: 10.1038/s44271-025-00285-8
+    links:
+      - label: Open access (PMC)
+        url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12271468/
+
+# Dissertations
+theses:
+  - year: "2021"
+    authors: Battistello, G., Chung, V. & Grèzes, J.
+    title: Interpersonal synchrony as a substrate of emotion alignment
+    venue: M.Sc dissertation, École Normale Supérieure, Paris
+  - year: "2020"
+    authors: Battistello, G. & Cristofori, I.
+    title: "Broca's involvement in peripheral motor activities: a lesion study"
+    venue: B.Sc dissertation, Claude Bernard University Lyon 1

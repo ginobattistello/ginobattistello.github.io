@@ -1,0 +1,17 @@
+# Site-wide settings. After editing this file, push again for changes to show.
+title: Gino Battistello
+description: >-
+  Gino Battistello, PhD student in cognitive neuroscience at the Paris Brain Institute (ICM):
+  affective states, valuation and creativity.
+lang: en
+
+# For a site at https://USERNAME.github.io leave baseurl empty.
+# For a project site (https://USERNAME.github.io/REPO) set baseurl: "/REPO".
+url: "https://ginobattistello.github.io"
+baseurl: ""
+
+markdown: kramdown
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

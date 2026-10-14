@@ -1,0 +1,25 @@
+# Teaching, newest first (same fields as experience.yml).
+teaching:
+  - date: "2026"
+    title: Teaching Assistant
+    subtitle: Literature review & meta-analysis
+    place: Master of Cognitive Science (Cogmaster), ENS – PSL
+  - date: "2025"
+    title: Teaching Assistant
+    subtitle: Literature review & meta-analysis
+    place: Master of Cognitive Science (Cogmaster), ENS – PSL
+  - date: "2025"
+    title: Invited lecturer
+    subtitle: Artificial neural networks to probe creativity
+    place: Master iMind, PSL University
+  - date: "2024"
+    title: Invited lecturer
+    subtitle: Probing creativity with an experimental approach
+    place: Master iMind, PSL University
+
+# Student supervision
+supervision:
+  - date: M.Sc
+    title: Methodological supervision of three M.Sc students
+  - date: B.Sc
+    title: Conceptual supervision of one B.Sc student

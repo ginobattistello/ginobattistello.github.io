@@ -1,0 +1,36 @@
+# Service & outreach, as groups. Each group has a heading and its own list of items (newest first).
+- group: Conference organisation
+  items:
+    - date: "2025"
+      title: Volunteer, organisation of the Society for the Neuroscience of Creativity (SfNC) meeting
+    - date: "2024"
+      title: Volunteer, organisation of the Cognitive Neuroscience Society (CNS) meeting
+    - date: "2024"
+      title: Volunteer, organisation of the Society for the Neuroscience of Creativity (SfNC) meeting
+
+- group: Public outreach & science communication
+  items:
+    - date: "2025"
+      title: Co-organisation of a MasterClass on creativity
+      place: Paris Brain Institute
+    - date: "2025"
+      title: Co-organisation of a public event on creativity (Brain Awareness Week)
+      place: Paris Brain Institute
+    - date: "2023"
+      title: Moderator of a roundtable on bipolar disorder (26th Brain Awareness Week)
+      people: With Dr. Fabien Vinckier (MD, PhD) and writer Ariane Monceau
+    - date: "2023"
+      title: "Co-organisation of the INSERM public event \"Creativity & Neuromyths\""
+    - date: "2023"
+      title: Co-organisation of a MasterClass on creativity
+      place: Paris Brain Institute
+
+- group: "Institute life: the Ajité·es"
+  intro: Association of young researchers at the Paris Brain Institute.
+  items:
+    - date: 2023 – 2025
+      title: Head of the Treasury
+    - date: "2025"
+      title: Head of the Listening Unit (support for well-being at work)
+    - date: "2023"
+      title: Co-organiser of the Art Club

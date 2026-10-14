@@ -1,0 +1,56 @@
+# Degrees, newest first (same fields as experience.yml).
+degrees:
+  - date: 2021 – 2023
+    title: M.Sc in Cognitive Science (Cogmaster)
+    place: École Normale Supérieure (ENS – PSL), Paris
+    notes:
+      - "Major: cognitive neuroscience (4% admission rate) · Minor: computational modelling"
+  - date: 2018 – 2021
+    title: B.Sc in Human Physiology
+    place: Claude Bernard University Lyon 1
+    notes:
+      - "Modules: neurophysiology, molecular and cellular biology, animal physiology, genetics, statistics"
+      - "Options: neuroscience, introduction to psychology, travel through the brain"
+
+# Summer schools and additional training, newest first.
+training:
+  - date: "2026"
+    title: Computational Psychiatry Course (CPC)
+    place: Translational Neuromodelling Unit, University of Zurich & ETH Zurich
+    subtitle: Theoretical and hands-on modelling of brain and behaviour applied to psychiatry
+  - date: "2025"
+    title: Computational Decision Sciences (CDS)
+    place: Royal Holloway, University of London
+    subtitle: From reinforcement learning to complex collective behaviour
+  - date: "2025"
+    title: COGNESTIC
+    place: MRC Cognition and Brain Sciences Unit, University of Cambridge
+    subtitle: Neuroimaging analysis with open-source libraries
+  - date: "2025"
+    title: Neuromatch Academy (online)
+    subtitle: Computational neuroscience methods in Python
+  - date: "2024"
+    title: Human Brain Anatomy Course
+    place: King's College London, with Dr. Paul Johns (Institute of Neurology, UCL)
+    subtitle: Descriptive and practical observation of human brain specimens
+  - date: "2024"
+    title: Information Theory and Self-Organisation (online)
+    place: University of Sydney, with Dr. Joseph Lizier
+    subtitle: System dynamics and information-theoretic measures
+
+awards:
+  - date: "2026"
+    title: Training grant in computational psychiatry
+    place: PROPSY-EDU, University of Bordeaux
+  - date: "2026"
+    title: Project Prize, Hacktion Potential hackathon
+    place: Paris Brain Institute
+  - date: "2023"
+    title: Poster Prize of the Ajité·es
+    place: Paris Brain Institute
+
+languages:
+  - French (native)
+  - English (C1)
+  - Spanish (B1)
+  - Italian (A2)

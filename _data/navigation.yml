@@ -1,0 +1,16 @@
+# The menu at the top of every page, in this order.
+# To add a page: create the page file, then add a line here with its title and url.
+- title: Home
+  url: /
+- title: Research
+  url: /research/
+- title: Publications
+  url: /publications/
+- title: Talks & Posters
+  url: /talks/
+- title: Teaching
+  url: /teaching/
+- title: Outreach
+  url: /outreach/
+- title: CV
+  url: /cv/

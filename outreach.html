@@ -1,0 +1,13 @@
+---
+layout: page
+title: Service & Outreach
+permalink: /outreach/
+---
+{% for g in site.data.outreach %}
+<section class="block">
+  <h2>{{ g.group }}</h2>
+  {% if g.intro %}<p class="muted">{{ g.intro }}</p>{% endif %}
+  {% assign entries = g.items %}
+  {% include entries.html %}
+</section>
+{% endfor %}

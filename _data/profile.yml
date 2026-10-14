@@ -1,0 +1,25 @@
+# Who you are: used on the home page, in the header and in the footer.
+name: Gino Battistello
+initials: GB                  # shown when there is no photo
+photo:                        # e.g. /assets/img/photo.jpg (leave empty for initials)
+role: PhD student in cognitive neuroscience
+affiliation: Paris Brain Institute (ICM) · FrontLab – CreaTeam
+location: Paris, France
+email: gino.battistello@icm-institute.org
+
+# How your name appears in author lists; it is put in bold automatically.
+author_name: Battistello, G.
+
+links:
+  - label: Email
+    url: mailto:gino.battistello@icm-institute.org
+  - label: Google Scholar
+    url: https://scholar.google.com/citations?user=qjkSYX0AAAAJ&hl=en
+  - label: ORCID
+    url: https://orcid.org/0009-0009-9355-470X
+  - label: GitHub
+    url: https://github.com/ginobattistello
+  - label: CV (PDF)
+    url: /assets/cv.pdf
+
+last_updated: October 2026

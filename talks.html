@@ -1,0 +1,30 @@
+---
+layout: page
+title: Talks & Posters
+permalink: /talks/
+lead: Conference presentations, grouped by work. Each entry lists every meeting where it was presented.
+---
+{% assign me = site.data.profile.author_name %}
+{% capture me_bold %}<strong>{{ me }}</strong>{% endcapture %}
+<section class="block">
+  <ul class="talks">
+    {% for t in site.data.presentations %}
+    <li class="talk">
+      <span class="pub-year">{{ t.year }}</span>
+      <div>
+        <p class="pub-title">{{ t.title }}</p>
+        <p class="pub-authors">{{ t.authors | replace: me, me_bold }}</p>
+        <ul class="venues">
+          {% for v in t.venues %}
+          <li>
+            <span class="tag tag-{{ v.type | downcase }}">{{ v.type }}</span>
+            <span>{{ v.name }}, {{ v.place }}{% if v.year != t.year %} ({{ v.year }}){% endif %}</span>
+            {% if v.note %}<span class="tag tag-prize">{{ v.note }}</span>{% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

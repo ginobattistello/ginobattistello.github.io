@@ -1,0 +1,12 @@
+# "Highlights" on the home page, newest first. Keep it to 4–6 items.
+# text accepts simple HTML (links, <em>…).
+- date: "2026"
+  text: Project Prize at the Hacktion Potential hackathon (Paris Brain Institute).
+- date: "2026"
+  text: Training grant in computational psychiatry (PROPSY-EDU, University of Bordeaux) to attend the Computational Psychiatry Course in Zurich.
+- date: "2026"
+  text: Poster at the Symposium on the Biology of Decision Making (SBDM), Paris.
+- date: "2025"
+  text: >-
+    Paper published in <em>Communications Psychology</em>:
+    <a href="https://doi.org/10.1038/s44271-025-00285-8">Subjective valuation as a domain-general process in creative thinking</a>.

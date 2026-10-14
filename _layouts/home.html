@@ -1,0 +1,36 @@
+---
+layout: default
+---
+{% assign p = site.data.profile %}
+<section class="hero">
+  {% if p.photo %}
+  <img class="portrait" src="{{ p.photo | relative_url }}" alt="Portrait of {{ p.name }}">
+  {% else %}
+  <div class="portrait monogram" aria-hidden="true">{{ p.initials }}</div>
+  {% endif %}
+  <div class="hero-text">
+    <h1>{{ p.name }}</h1>
+    <p class="role">{{ p.role }}<br>{{ p.affiliation }}</p>
+    <div class="bio">{{ content }}</div>
+    <p class="links">
+      {% for l in p.links %}<a class="chip" href="{{ l.url | relative_url }}">{{ l.label }}</a>{% endfor %}
+    </p>
+  </div>
+</section>
+
+<section class="block">
+  <h2>Highlights</h2>
+  <ul class="highlights">
+    {% for h in site.data.highlights %}
+    <li><span class="hl-date">{{ h.date }}</span><span>{{ h.text }}</span></li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="block">
+  <h2>Selected publication</h2>
+  <ol class="pubs">
+    {% for pub in site.data.publications.articles limit:2 %}{% include publication.html %}{% endfor %}
+  </ol>
+  <p><a href="{{ '/publications/' | relative_url }}">All publications →</a></p>
+</section>

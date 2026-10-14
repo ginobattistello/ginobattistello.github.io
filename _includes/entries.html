@@ -1,0 +1,24 @@
+{% comment %}
+  A list of dated entries (experience, teaching, education, awards…).
+  Usage in a page:
+    {% assign entries = site.data.experience %}
+    {% include entries.html %}
+  Each entry can have: date, duration, title, subtitle, people, place, notes (list), url.
+{% endcomment %}
+<ul class="entries">
+  {% for e in entries %}
+  <li class="entry">
+    <div class="entry-date">
+      {{ e.date }}
+      {% if e.duration %}<span class="entry-duration">{{ e.duration }}</span>{% endif %}
+    </div>
+    <div class="entry-body">
+      <p class="entry-title">{% if e.url %}<a href="{{ e.url }}">{{ e.title }}</a>{% else %}{{ e.title }}{% endif %}</p>
+      {% if e.subtitle %}<p class="entry-subtitle">{{ e.subtitle }}</p>{% endif %}
+      {% for n in e.notes %}<p class="entry-meta">{{ n }}</p>{% endfor %}
+      {% if e.people %}<p class="entry-meta">{{ e.people }}</p>{% endif %}
+      {% if e.place %}<p class="entry-meta">{{ e.place }}</p>{% endif %}
+    </div>
+  </li>
+  {% endfor %}
+</ul>

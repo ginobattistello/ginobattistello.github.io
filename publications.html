@@ -1,0 +1,19 @@
+---
+layout: page
+title: Publications
+permalink: /publications/
+lead: See also my <a href="https://scholar.google.com/citations?user=qjkSYX0AAAAJ&hl=en">Google Scholar</a> and <a href="https://orcid.org/0009-0009-9355-470X">ORCID</a> profiles.
+---
+<section class="block">
+  <h2>Peer-reviewed articles</h2>
+  <ol class="pubs">
+    {% for pub in site.data.publications.articles %}{% include publication.html %}{% endfor %}
+  </ol>
+</section>
+
+<section class="block">
+  <h2>Dissertations</h2>
+  <ol class="pubs pubs-small">
+    {% for pub in site.data.publications.theses %}{% include publication.html %}{% endfor %}
+  </ol>
+</section>
