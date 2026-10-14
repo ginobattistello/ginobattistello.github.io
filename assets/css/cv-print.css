@@ -1,0 +1,86 @@
+---
+---
+/* Printable CV (cv-print.html). Same palette as the website; sized for A4. */
+:root {
+  --text: #111111;
+  --muted: #666666;
+  --faint: #9a9a9a;
+  --rule: #e2e2e2;
+  --accent: #f26a1b;
+  --font: "Helvetica Neue", Helvetica, "TeX Gyre Heros", Arial, sans-serif;
+}
+
+@page {
+  size: A4;
+  margin: 15mm 16mm 16mm;
+  @bottom-left  { content: "Gino Battistello · Curriculum Vitae"; font: 7pt var(--font); color: #9a9a9a; }
+  @bottom-right { content: counter(page) " / " counter(pages); font: 7pt var(--font); color: #9a9a9a; }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body {
+  margin: 0 auto; max-width: 178mm; padding: 0;
+  font: 400 8.6pt/1.42 var(--font);
+  color: var(--text); background: #fff;
+}
+@media screen { body { padding: 12mm 0 20mm; } }
+a { color: inherit; text-decoration: none; }
+p { margin: 0; }
+strong { font-weight: 700; }
+
+/* Header */
+.cv-header {
+  display: flex; justify-content: space-between; align-items: flex-end; gap: 8mm;
+  padding-bottom: 4.5mm; margin-bottom: 5mm; border-bottom: 1.2pt solid var(--text);
+}
+h1 { font-size: 23pt; font-weight: 400; letter-spacing: -.02em; line-height: 1; margin: 0 0 2.2mm; }
+.cv-role { color: var(--muted); font-size: 9pt; line-height: 1.4; }
+.cv-contact { list-style: none; margin: 0; padding: 0; text-align: right; font-size: 8pt; line-height: 1.55; color: var(--muted); }
+.cv-contact a:hover { color: var(--accent); }
+
+/* Sections */
+section { margin-bottom: 3.4mm; }
+h2 {
+  display: flex; align-items: center; gap: 2.2mm;
+  font-size: 7.4pt; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+  margin: 0 0 1.6mm; padding-bottom: 1.4mm; border-bottom: .5pt solid var(--rule);
+  break-after: avoid;
+}
+h2::before { content: ""; width: 1.6mm; height: 1.6mm; background: var(--accent); flex-shrink: 0; }
+h3 {
+  font-size: 7.6pt; font-weight: 700; color: var(--muted); margin: 2mm 0 .2mm 26mm;
+  break-after: avoid;
+}
+
+/* Entries */
+.cv-entry {
+  display: grid; grid-template-columns: 24mm 1fr; gap: 2mm;
+  padding: 1.05mm 0; break-inside: avoid;
+}
+.cv-date { color: var(--muted); font-size: 8pt; padding-top: .2mm; }
+.cv-date span { display: block; color: var(--faint); font-size: 7.2pt; }
+.cv-title { font-weight: 700; }
+.cv-sub { color: var(--text); }
+.cv-meta { color: var(--muted); font-size: 8pt; }
+.cv-authors strong { color: var(--text); font-weight: 700; }
+.cv-meta a { color: var(--muted); }
+.cv-tag, .cv-kind {
+  display: inline-block; font-size: 6.2pt; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--muted); border: .5pt solid var(--rule); border-radius: 1mm; padding: .35mm 1.2mm; vertical-align: .25mm;
+}
+.cv-venue { font-size: 8pt; margin-top: .5mm; color: var(--text); }
+.cv-kind { width: 12mm; text-align: center; margin-right: 1.8mm; }
+.cv-kind-talk { background: var(--text); color: #fff; border-color: var(--text); }
+.cv-prize {
+  display: inline-block; font-size: 6.2pt; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--accent); border: .5pt solid var(--accent); border-radius: 1mm; padding: .35mm 1.2mm; margin-left: 1mm; vertical-align: .25mm;
+}
+.cv-languages { padding-left: 26mm; }
+
+.cv-footer {
+  margin-top: 4mm; padding-top: 2mm; border-top: .5pt solid var(--rule);
+  font-size: 7.2pt; color: var(--faint);
+}
+.cv-h3-note { font-weight: 400; }
+.cv-plain { font-weight: 400; }

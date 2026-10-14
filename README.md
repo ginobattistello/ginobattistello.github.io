@@ -15,15 +15,18 @@ _data/                 ← YOUR CONTENT (plain YAML lists — edit these most of
   presentations.yml    Talks & Posters (one entry per abstract, with all its venues)
   teaching.yml         teaching + student supervision
   outreach.yml         service & outreach, in groups
-  education.yml        degrees, summer schools, awards, languages (CV page)
+  training.yml         Training page: summer schools, courses, online programmes
+  education.yml        degrees, awards, languages (CV page)
+                       (all of these also feed the printable CV at /cv-print/)
 
 index.md               home page bio (Markdown)
-research.html  publications.html  talks.html  teaching.html  outreach.html  cv.html
+research.html  publications.html  talks.html  training.html  teaching.html
+outreach.html  cv.html  cv-print.html (printable CV, not in the menu)
                        one file per page: a title + which data to show
 
 _layouts/              page skeletons (default, page, home)
 _includes/             reusable building blocks (header, footer, entries list, publication)
-assets/css/style.css   the design — colours and fonts are at the top
+assets/css/site.css    the design — colours and fonts are at the top
 assets/cv.pdf          the CV behind the "CV (PDF)" links
 ```
 
@@ -35,7 +38,12 @@ If a value contains a colon followed by a space, wrap it in quotes: `title: "Cre
 
 **Add a venue to an existing talk**: add a `- type: Poster` block under its `venues:`.
 
-**Update the CV PDF**: replace `assets/cv.pdf` with a new file of the same name.
+**Update the CV PDF**: the PDF is built from the same `_data/` files as the site, so after adding a paper or talk:
+1. Push your changes, wait for the site to rebuild, and open `https://ginobattistello.github.io/cv-print/` in Chrome.
+2. Print → **Save as PDF**, paper **A4**, margins **Default**, **Headers and footers** off, **Background graphics** on.
+3. Save it as `assets/cv.pdf` (replacing the old one), then commit and push again.
+
+The printable page's look is in `assets/css/cv-print.css`; its layout is `cv-print.html`.
 
 **Add a photo**: put it at `assets/img/photo.jpg` and set `photo: /assets/img/photo.jpg` in `_data/profile.yml`.
 

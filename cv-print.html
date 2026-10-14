@@ -1,0 +1,109 @@
+---
+layout: print
+title: Curriculum Vitae
+permalink: /cv-print/
+---
+{% comment %}
+  Printable CV, built from the same _data files as the website.
+  To make the PDF: open this page in Chrome (yoursite/cv-print/), Print → Save as PDF,
+  paper A4, margins Default, "Headers and footers" OFF, "Background graphics" ON.
+  Save it as assets/cv.pdf. See README.
+{% endcomment %}
+{% assign p = site.data.profile %}
+{% assign me = p.author_name %}
+{% capture me_bold %}<strong>{{ me }}</strong>{% endcapture %}
+
+<header class="cv-header">
+  <div>
+    <h1>{{ p.name }}</h1>
+    <p class="cv-role">{{ p.role }}<br>{{ p.affiliation }}</p>
+  </div>
+  <ul class="cv-contact">
+    <li><a href="mailto:{{ p.email }}">{{ p.email }}</a></li>
+    <li><a href="{{ site.url }}">{{ site.url | remove: 'https://' }}</a></li>
+    <li><a href="https://orcid.org/0009-0009-9355-470X">ORCID 0009-0009-9355-470X</a></li>
+    <li><a href="https://scholar.google.com/citations?user=qjkSYX0AAAAJ&hl=en">Google Scholar</a> · <a href="https://github.com/ginobattistello">GitHub</a></li>
+  </ul>
+</header>
+
+<section>
+  <h2>Research experience</h2>
+  {% assign entries = site.data.experience %}{% include cv-entries.html %}
+</section>
+
+<section>
+  <h2>Education</h2>
+  {% assign entries = site.data.education.degrees %}{% include cv-entries.html %}
+</section>
+
+<section>
+  <h2>Publications</h2>
+  {% for pub in site.data.publications.articles %}
+  <div class="cv-entry">
+    <div class="cv-date">{{ pub.year }}</div>
+    <div class="cv-body">
+      <p class="cv-title">{{ pub.title }}</p>
+      <p class="cv-meta cv-authors">{{ pub.authors | replace: me, me_bold }}</p>
+      <p class="cv-meta"><em>{{ pub.venue }}</em>{% if pub.details %}, {{ pub.details }}{% endif %}{% if pub.doi %} · <a href="https://doi.org/{{ pub.doi }}">doi:{{ pub.doi }}</a>{% endif %}</p>
+    </div>
+  </div>
+  {% endfor %}
+  <h3>Dissertations</h3>
+  {% for pub in site.data.publications.theses %}
+  <div class="cv-entry">
+    <div class="cv-date">{{ pub.year }}</div>
+    <div class="cv-body">
+      <p class="cv-title">{{ pub.title }}</p>
+      <p class="cv-meta cv-authors">{{ pub.authors | replace: me, me_bold }}</p>
+      <p class="cv-meta">{{ pub.venue }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</section>
+
+<section>
+  <h2>Talks &amp; posters</h2>
+  {% for t in site.data.presentations %}
+  <div class="cv-entry">
+    <div class="cv-date">{{ t.year }}</div>
+    <div class="cv-body">
+      <p class="cv-title">{{ t.title }}</p>
+      <p class="cv-meta cv-authors">{{ t.authors | replace: me, me_bold }}</p>
+      {% for v in t.venues %}
+      <p class="cv-venue"><span class="cv-kind{% if v.type == 'Talk' %} cv-kind-talk{% endif %}">{{ v.type }}</span>{{ v.name }}, {{ v.place }}{% if v.year != t.year %} ({{ v.year }}){% endif %}{% if v.note %} <span class="cv-prize">{{ v.note }}</span>{% endif %}</p>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</section>
+
+<section>
+  <h2>Training</h2>
+  {% assign entries = site.data.training %}{% include cv-entries.html %}
+</section>
+
+<section>
+  <h2>Teaching &amp; supervision</h2>
+  {% assign entries = site.data.teaching.teaching %}{% include cv-entries.html %}
+  {% assign entries = site.data.teaching.supervision %}{% assign plain = true %}{% include cv-entries.html %}{% assign plain = false %}
+</section>
+
+<section>
+  <h2>Awards &amp; grants</h2>
+  {% assign entries = site.data.education.awards %}{% include cv-entries.html %}
+</section>
+
+<section>
+  <h2>Service &amp; outreach</h2>
+  {% for g in site.data.outreach %}
+  <h3>{{ g.group }}{% if g.intro %} <span class="cv-h3-note">· {{ g.intro | remove: '.' }}</span>{% endif %}</h3>
+  {% assign entries = g.items %}{% assign plain = true %}{% include cv-entries.html %}{% assign plain = false %}
+  {% endfor %}
+</section>
+
+<section>
+  <h2>Languages</h2>
+  <p class="cv-languages">{{ site.data.education.languages | join: " · " }}</p>
+</section>
+
+<footer class="cv-footer">Last updated {{ p.last_updated }} · Full version online at <a href="{{ site.url }}">{{ site.url | remove: 'https://' }}</a></footer>
