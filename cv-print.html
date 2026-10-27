@@ -130,9 +130,6 @@ permalink: /cv-print/
   <h2 id="cv-skills-heading">Research expertise &amp; technical skills</h2>
   <table class="cv-skills-table" aria-labelledby="cv-skills-heading">
     <colgroup><col class="cv-skill-category-column"><col></colgroup>
-    <thead>
-      <tr><th scope="col">Category</th><th scope="col">Expertise, methods and tools</th></tr>
-    </thead>
     {% for domain in site.data.skills %}
     <tbody>
       <tr class="cv-skill-domain"><th scope="rowgroup" colspan="2">{{ domain.domain | escape }}</th></tr>
