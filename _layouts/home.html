@@ -14,7 +14,10 @@ layout: default
 {% endif %}
 <section class="hero">
   {% if photo %}
-  <img class="portrait" src="{{ p.photo | relative_url }}" alt="Portrait of {{ p.name | escape }}" width="132" height="132" style="object-position: {{ p.photo_position | default: 'center' | escape }};">
+  {% assign photo_position = p.photo_position | default: '50% 50%' | replace: 'center', '50%' | split: ' ' %}
+  <div class="portrait portrait-photo" style="--photo-x: {{ photo_position[0] | escape }}; --photo-y: {{ photo_position[1] | default: '50%' | escape }}; --photo-width: {{ p.photo_zoom | default: '100%' | escape }};">
+    <img src="{{ p.photo | relative_url }}" alt="Portrait of {{ p.name | escape }}" decoding="async">
+  </div>
   {% else %}
   <div class="portrait monogram" aria-hidden="true">{{ p.initials }}</div>
   {% endif %}

@@ -1,12 +1,13 @@
 # Who you are: used on the home page, in the header and in the footer.
 name: Gino Battistello
 initials: GB                  # shown when there is no photo
-photo:                        # e.g. /assets/img/photo.jpg (leave empty for initials)
-photo_position: center        # Adjust the portrait crop, e.g. "50% 30%".
-banner:                       # e.g. /assets/img/banner.jpg (your own photograph)
-banner_alt:                   # Describe the photograph for screen readers.
+photo: /assets/img/portrait.jpg
+photo_position: "75% 30%"      # Position of the face in the source photograph.
+photo_zoom: 260%               # Image width relative to the circular frame.
+banner: /assets/img/banner.jpg
+banner_alt: Golden light reflected on dark blue rippling water
 banner_caption:               # Optional location or photo credit.
-banner_position: center       # Adjust the banner crop, e.g. "50% 40%".
+banner_position: "50% 35%"     # Frame the gold reflections in the upper-middle area.
 birth_year: 1999
 nationality: French
 role: PhD student in cognitive neuroscience

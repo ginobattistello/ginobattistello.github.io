@@ -52,17 +52,20 @@ The printable page's look is in `assets/css/cv-print.css`; its layout is `cv-pri
 `_data/profile.yml`:
 
 ```yaml
-photo: /assets/img/photo.jpg
-photo_position: center
+photo: /assets/img/portrait.jpg
+photo_position: "75% 30%"
+photo_zoom: 260%
 banner: /assets/img/banner.jpg
 banner_alt: A description of what the photograph shows
 banner_caption: Optional location or photo credit
-banner_position: center
+banner_position: "50% 35%"
 ```
 
-The portrait uses a circular crop; the banner appears above the home-page bio.
-Adjust either position (for example `"50% 30%"`) to choose the crop. Leave `photo` or
-`banner` empty to hide that image. Set `birth_year` and `nationality` in the same file
+The portrait uses a circular frame. `photo_position` is the face's horizontal and
+vertical position in the source photograph; `photo_zoom` controls the image width
+inside the frame (`100%` for a close-up, larger values for a wider photograph).
+The banner appears above the home-page bio; `banner_position` controls its crop.
+Leave `photo` or `banner` empty to hide that image. Set `birth_year` and `nationality` in the same file
 to show them on the home page, CV page and printable CV; empty fields stay hidden.
 
 **Labels and CV dividers**: dated entries accept an optional `tag`, such as `Volunteer`,

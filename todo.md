@@ -1,7 +1,7 @@
 # Ongoing work
 
-- [ ] Add a portrait. Image rendering and crop settings are ready in `_data/profile.yml`; awaiting the photograph.
-- [ ] Add a banner using one of my photographs. Banner, alt text, caption and crop settings are ready in `_data/profile.yml`; awaiting the photograph and its description.
+- [x] Add a colour portrait with adjustable head-and-shoulders framing on the home page.
+- [x] Add the water photograph as a responsive home-page banner, with descriptive alt text.
 - [x] Add year of birth: 1999, on the home page and CV.
 - [x] Add nationality: French, on the home page and CV.
 - [x] Add small dividers between PhD and Graduate, and between Graduate and Undergraduate in the printable CV and CV PDF.
