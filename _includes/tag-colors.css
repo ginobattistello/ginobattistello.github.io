@@ -1,0 +1,18 @@
+/* Shared label palette for the website and printable CV. */
+.tag-grants, .cv-tag-grants {
+  background: #7a2e00; color: #ffb36b; border-color: transparent;
+}
+.tag-awards, .cv-tag-awards {
+  background: #ffe4cc; color: #8a3800; border-color: transparent;
+}
+
+/* Service roles progress from dark to light grey. */
+.tag-organiser, .tag-co-organiser, .cv-tag-organiser, .cv-tag-co-organiser {
+  background: #444444; color: #ffffff; border-color: transparent;
+}
+.tag-interview, .cv-tag-interview {
+  background: #d8d8d8; color: #333333; border-color: transparent;
+}
+.tag-volunteer, .cv-tag-volunteer {
+  background: #f0f0f0; color: #595959; border-color: transparent;
+}

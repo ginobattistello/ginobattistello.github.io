@@ -19,6 +19,7 @@ _data/                 ← YOUR CONTENT (plain YAML lists — edit these most of
   education.yml        degrees, awards, languages (CV page)
   software.yml         software & tools (Research page; hidden until entries are added)
   team.yml             team responsibilities (Research page; hidden until entries are added)
+  skills.yml           expertise, methods and tools (final section of the printable CV)
                        (all of these also feed the printable CV at /cv-print/)
 
 index.md               home page bio (Markdown)
@@ -73,6 +74,11 @@ the printable CV adds a small divider whenever that stage changes.
 Entries use the same fields as other dated lists; `date` is optional for software.
 These sections appear on the Research page and printable CV. Replace a list with `[]`
 to hide its section.
+
+**CV expertise table**: edit `_data/skills.yml`. Each domain contains categories and
+lines of details. Use `label` for a bold prefix and `level: tools` for supporting
+software or tool names in smaller grey text. The table starts on a new final page
+of the printable CV. Replace the list with `[]` to hide it.
 
 ## Add a new page
 

@@ -21,4 +21,3 @@
 - [x] Complete the GBM toolbox section on the Research page and CV, with a description from its README and a link to https://github.com/ginobattistello/gbm.
 - [x] Add team roles on the Research page and CV: meeting manager since 2024, social event organiser for 2025–2026.
 
-The downloadable CV is regenerated at `assets/cv.pdf`. See `README.md` for content and image settings.

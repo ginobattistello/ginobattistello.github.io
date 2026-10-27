@@ -13,7 +13,7 @@
       {% if e.duration %}<span class="entry-duration">{{ e.duration }}</span>{% endif %}
     </div>
     <div class="entry-body">
-      <p class="entry-title">{% if e.tag %}<span class="tag">{{ e.tag }}</span> {% endif %}{% if e.url %}<a href="{{ e.url | relative_url }}">{{ e.title }}</a>{% else %}{{ e.title }}{% endif %}</p>
+      <p class="entry-title">{% if e.tag %}<span class="tag tag-{{ e.tag | slugify }}">{{ e.tag }}</span> {% endif %}{% if e.url %}<a href="{{ e.url | relative_url }}">{{ e.title }}</a>{% else %}{{ e.title }}{% endif %}</p>
       {% if e.subtitle %}<p class="entry-subtitle">{{ e.subtitle }}</p>{% endif %}
       {% for n in e.notes %}<p class="entry-meta">{{ n }}</p>{% endfor %}
       {% if e.people %}<p class="entry-meta">{{ e.people }}</p>{% endif %}

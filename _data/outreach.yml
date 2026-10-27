@@ -39,18 +39,23 @@
       title: MasterClass on creativity
       place: Paris Brain Institute
 
-- group: "Institute life: the Ajité·es"
-  intro: Association of young researchers at the Paris Brain Institute.
+- group: "Experience in associations"
   items:
     - date: 2023 – 2025
       title: Head of the Treasury
+      place: Ajité·es – Association of young researchers at the Paris Brain Institute
     - date: "2025"
       title: Head of the Listening Unit (support for well-being at work)
+      place: Ajité·es – Association of young researchers at the Paris Brain Institute
     - date: "2023"
-      tag: Co-organiser
       title: Art Club
+      place: Ajité·es – Association of young researchers at the Paris Brain Institute
+    - date: "2019 – 2022"
+      title: Peer-to-peer prevention & risk reduction
+      place: Claude Bernard University Lyon 1 – Health center
 
 - group: Peer reviewing
   items:
     - title: Creativity Research Journal
+      date: "2025"
       tag: Reviewer

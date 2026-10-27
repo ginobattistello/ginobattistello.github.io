@@ -112,6 +112,7 @@ h2::before { content: ""; width: .45rem; height: .45rem; background: var(--accen
 }
 .tag-talk { background: var(--text); color: var(--bg); }
 .tag-prize { background: transparent; color: var(--accent); border-color: var(--accent); }
+{% include tag-colors.css %}
 .button {
   display: inline-block; font-size: .85rem; font-weight: 400; line-height: 1; text-decoration: none;
   padding: .8rem 1.2rem; border-radius: 3px; background: var(--text); color: var(--bg);

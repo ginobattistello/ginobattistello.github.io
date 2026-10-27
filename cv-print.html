@@ -101,9 +101,9 @@ permalink: /cv-print/
 
 <section>
   <h2>Teaching &amp; supervision</h2>
-  <h3>Teaching</h3>
+  <h3 class="cv-subsection">Teaching</h3>
   {% assign entries = site.data.teaching.teaching %}{% include cv-entries.html %}
-  <h3>Student supervision</h3>
+  <h3 class="cv-subsection cv-subsection-divider">Student supervision</h3>
   {% assign entries = site.data.teaching.supervision %}{% assign plain = true %}{% include cv-entries.html %}{% assign plain = false %}
 </section>
 
@@ -115,7 +115,7 @@ permalink: /cv-print/
 <section class="cv-keep-together">
   <h2>Service &amp; outreach</h2>
   {% for g in site.data.outreach %}
-  <h3>{{ g.group }}{% if g.intro %} <span class="cv-h3-note">· {{ g.intro | remove: '.' }}</span>{% endif %}</h3>
+  <h3 class="cv-subsection{% unless forloop.first %} cv-subsection-divider{% endunless %}">{{ g.group }}{% if g.intro %} <span class="cv-h3-note">· {{ g.intro | remove: '.' }}</span>{% endif %}</h3>
   {% assign entries = g.items %}{% assign plain = true %}{% include cv-entries.html %}{% assign plain = false %}
   {% endfor %}
 </section>
@@ -124,5 +124,32 @@ permalink: /cv-print/
   <h2>Languages</h2>
   <p class="cv-languages">{{ site.data.education.languages | join: " · " }}</p>
 </section>
+
+{% if site.data.skills.size > 0 %}
+<section class="cv-skills" aria-labelledby="cv-skills-heading">
+  <h2 id="cv-skills-heading">Research expertise &amp; technical skills</h2>
+  <table class="cv-skills-table" aria-labelledby="cv-skills-heading">
+    <colgroup><col class="cv-skill-category-column"><col></colgroup>
+    <thead>
+      <tr><th scope="col">Category</th><th scope="col">Expertise, methods and tools</th></tr>
+    </thead>
+    {% for domain in site.data.skills %}
+    <tbody>
+      <tr class="cv-skill-domain"><th scope="rowgroup" colspan="2">{{ domain.domain | escape }}</th></tr>
+      {% for item in domain.items %}
+      <tr>
+        <th scope="row" class="cv-skill-category">{{ item.category | escape }}</th>
+        <td>
+          {% for detail in item.details %}
+          <p{% if detail.level == 'tools' %} class="cv-skill-tools"{% endif %}>{% if detail.label %}<strong>{{ detail.label | escape }}:</strong> {% endif %}{{ detail.text | escape }}</p>
+          {% endfor %}
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+    {% endfor %}
+  </table>
+</section>
+{% endif %}
 
 <footer class="cv-footer">Last updated {{ p.last_updated }} · Full version online at <a href="{{ site.url }}">{{ site.url | remove: 'https://' }}</a></footer>

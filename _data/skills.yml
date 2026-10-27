@@ -1,0 +1,74 @@
+# Expertise shown in the final section of the printable CV.
+# Each domain contains categories, with one or more lines of details.
+# Use level: tools for supporting software/tool names, shown in smaller grey text.
+- domain: Topics
+  items:
+    - category: Disciplines
+      details:
+        - text: Cognitive neuroscience; Experimental psychology
+    - category: Research themes
+      details:
+        - text: Value-based decision-making; Creativity and divergent thinking; Emotions, moods and affects; Social cognition and interpersonal synchrony
+    - category: Neuroanatomy and functional organisation
+      details:
+        - text: Prefrontal cortex; Limbic system; Structure-function coupling
+
+- domain: Methodology
+  items:
+    - category: Neuroimaging
+      details:
+        - label: MRI
+          text: Task-based functional MRI; Resting-state functional MRI; anatomical MRI
+    - category: Electrophysiology
+      details:
+        - label: Intracranial EEG
+          text: Data collection; Local Field Potential (upcoming)
+        - label: High-density EEG
+          text: Preprocessing; Source localisation
+    - category: Peripheral physiology
+      details:
+        - text: Electrocardiography (ECG); Skin conductance (EDA/GSR); Electromyography (EMG)
+    - category: Statistical and computational methods
+      details:
+        - text: Descriptive and inferential statistics; Machine learning; Deep learning
+    - category: Computational modelling
+      details:
+        - label: Toolboxes
+          level: tools
+          text: Variational Bayesian Analysis (VBA); Generative Bayesian Modelling (GBM) toolbox
+    - category: Programming
+      details:
+        - label: Scientific computing
+          text: Python, MATLAB, R
+        - label: Web technologies
+          text: HTML, JavaScript
+    - category: Scientific software
+      details:
+        - label: Machine learning
+          level: tools
+          text: scikit-learn
+        - label: Deep learning
+          level: tools
+          text: Keras, PyTorch
+        - label: Neuroimaging and electrophysiology
+          level: tools
+          text: FieldTrip, Nilearn, SPM, FSL, FreeSurfer, MRIcron
+
+- domain: Scientific communication and organisation
+  items:
+    - category: Communication
+      details:
+        - text: Scientific writing and oral presentations
+        - label: Tools
+          level: tools
+          text: Office suites
+    - category: Reference management
+      details:
+        - label: Tool
+          level: tools
+          text: Zotero
+    - category: Project and knowledge organisation
+      details:
+        - label: Tool
+          level: tools
+          text: Notion
