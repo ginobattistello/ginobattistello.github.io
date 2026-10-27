@@ -41,12 +41,15 @@ training:
 awards:
   - date: "2026"
     title: Training grant in computational psychiatry
+    tag: Grants
     place: PROPSY-EDU, University of Bordeaux
   - date: "2026"
     title: Project Prize, Hacktion Potential hackathon
+    tag: Awards
     place: Paris Brain Institute
   - date: "2023"
     title: Poster Prize of the Ajité·es
+    tag: Awards
     place: Paris Brain Institute
 
 languages:

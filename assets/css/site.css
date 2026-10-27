@@ -79,6 +79,10 @@ h2::before { content: ""; width: .45rem; height: .45rem; background: var(--accen
 .block { margin-bottom: 3rem; }
 
 /* ===== Home ===== */
+.home-banner { margin: 0 0 2.2rem; }
+.home-banner img { display: block; width: 100%; height: clamp(10rem, 28vw, 16rem); object-fit: cover; border-radius: 3px; }
+.home-banner figcaption { margin-top: .4rem; color: var(--muted); font-size: .78rem; font-weight: var(--light); }
+.profile-details { color: var(--muted); font-size: .85rem; font-weight: var(--light); }
 .hero { display: flex; gap: 2.2rem; align-items: flex-start; margin-bottom: 3.5rem; }
 .portrait { width: 132px; height: 132px; border-radius: 50%; object-fit: cover; flex-shrink: 0; filter: grayscale(100%); }
 .monogram {
@@ -124,6 +128,7 @@ h2::before { content: ""; width: .45rem; height: .45rem; background: var(--accen
 .entry-duration { display: block; font-size: .74rem; color: var(--faint); }
 .entry-body p { margin: 0; }
 .entry-title { font-weight: 500; }
+.entry-title .tag { margin-right: .4rem; vertical-align: .1em; }
 .entry-subtitle { font-weight: var(--light); margin-top: .1rem !important; }
 .entry-meta { font-size: .84rem; font-weight: var(--light); color: var(--muted); margin-top: .15rem !important; }
 

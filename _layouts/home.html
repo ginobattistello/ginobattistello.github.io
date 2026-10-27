@@ -2,15 +2,28 @@
 layout: default
 ---
 {% assign p = site.data.profile %}
+{% assign photo = p.photo | default: false %}
+{% assign banner = p.banner | default: false %}
+{% assign birth_year = p.birth_year | default: false %}
+{% assign nationality = p.nationality | default: false %}
+{% if banner %}
+<figure class="home-banner">
+  <img src="{{ p.banner | relative_url }}" alt="{{ p.banner_alt | escape }}" style="object-position: {{ p.banner_position | default: 'center' | escape }};" fetchpriority="high">
+  {% if p.banner_caption %}<figcaption>{{ p.banner_caption | escape }}</figcaption>{% endif %}
+</figure>
+{% endif %}
 <section class="hero">
-  {% if p.photo %}
-  <img class="portrait" src="{{ p.photo | relative_url }}" alt="Portrait of {{ p.name }}">
+  {% if photo %}
+  <img class="portrait" src="{{ p.photo | relative_url }}" alt="Portrait of {{ p.name | escape }}" width="132" height="132" style="object-position: {{ p.photo_position | default: 'center' | escape }};">
   {% else %}
   <div class="portrait monogram" aria-hidden="true">{{ p.initials }}</div>
   {% endif %}
   <div class="hero-text">
     <h1>{{ p.name }}</h1>
     <p class="role">{{ p.role }}<br>{{ p.affiliation }}</p>
+    {% if birth_year or nationality %}
+    <p class="profile-details">{% if birth_year %}Born {{ birth_year | escape }}{% endif %}{% if birth_year and nationality %} · {% endif %}{% if nationality %}Nationality: {{ nationality | escape }}{% endif %}</p>
+    {% endif %}
     <div class="bio">{{ content }}</div>
     <p class="links">
       {% for l in p.links %}<a class="chip" href="{{ l.url | relative_url }}">{{ l.label }}</a>{% endfor %}

@@ -17,6 +17,8 @@ _data/                 ← YOUR CONTENT (plain YAML lists — edit these most of
   outreach.yml         service & outreach, in groups
   training.yml         Training page: summer schools, courses, online programmes
   education.yml        degrees, awards, languages (CV page)
+  software.yml         software & tools (Research page; hidden until entries are added)
+  team.yml             team responsibilities (Research page; hidden until entries are added)
                        (all of these also feed the printable CV at /cv-print/)
 
 index.md               home page bio (Markdown)
@@ -45,7 +47,32 @@ If a value contains a colon followed by a space, wrap it in quotes: `title: "Cre
 
 The printable page's look is in `assets/css/cv-print.css`; its layout is `cv-print.html`.
 
-**Add a photo**: put it at `assets/img/photo.jpg` and set `photo: /assets/img/photo.jpg` in `_data/profile.yml`.
+**Add a portrait or banner**: put your own photographs in `assets/img/`, then update
+`_data/profile.yml`:
+
+```yaml
+photo: /assets/img/photo.jpg
+photo_position: center
+banner: /assets/img/banner.jpg
+banner_alt: A description of what the photograph shows
+banner_caption: Optional location or photo credit
+banner_position: center
+```
+
+The portrait uses a circular crop; the banner appears above the home-page bio.
+Adjust either position (for example `"50% 30%"`) to choose the crop. Leave `photo` or
+`banner` empty to hide that image. Set `birth_year` and `nationality` in the same file
+to show them on the home page, CV page and printable CV; empty fields stay hidden.
+
+**Labels and CV dividers**: dated entries accept an optional `tag`, such as `Volunteer`,
+`Organiser`, `Grants` or `Awards`, displayed before the title on both the site and CV.
+Research experience entries also have a `stage` (`PhD`, `Graduate`, `Undergraduate`);
+the printable CV adds a small divider whenever that stage changes.
+
+**Software and team roles**: edit the lists in `_data/software.yml` and `_data/team.yml`.
+Entries use the same fields as other dated lists; `date` is optional for software.
+These sections appear on the Research page and printable CV. Replace a list with `[]`
+to hide its section.
 
 ## Add a new page
 

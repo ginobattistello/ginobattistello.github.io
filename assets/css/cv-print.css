@@ -21,7 +21,7 @@
 html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 body {
   margin: 0 auto; max-width: 178mm; padding: 0;
-  font: 400 8.6pt/1.42 var(--font);
+  font: 400 8.6pt/1.36 var(--font);
   color: var(--text); background: #fff;
 }
 @media screen { body { padding: 12mm 0 20mm; } }
@@ -40,7 +40,8 @@ h1 { font-size: 23pt; font-weight: 400; letter-spacing: -.02em; line-height: 1; 
 .cv-contact a:hover { color: var(--accent); }
 
 /* Sections */
-section { margin-bottom: 3.4mm; }
+section { margin-bottom: 3mm; }
+@media print { .cv-keep-together { break-inside: avoid; } }
 h2 {
   display: flex; align-items: center; gap: 2.2mm;
   font-size: 7.4pt; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
@@ -56,11 +57,13 @@ h3 {
 /* Entries */
 .cv-entry {
   display: grid; grid-template-columns: 24mm 1fr; gap: 2mm;
-  padding: 1.05mm 0; break-inside: avoid;
+  padding: .75mm 0; break-inside: avoid;
 }
 .cv-date { color: var(--muted); font-size: 8pt; padding-top: .2mm; }
 .cv-date span { display: block; color: var(--faint); font-size: 7.2pt; }
 .cv-title { font-weight: 700; }
+.cv-stage-start { border-top: .5pt solid var(--rule); margin-top: 1.5mm; padding-top: 2mm; }
+.cv-title .cv-tag { margin-right: 1.2mm; }
 .cv-sub { color: var(--text); }
 .cv-meta { color: var(--muted); font-size: 8pt; }
 .cv-authors strong { color: var(--text); font-weight: 700; }

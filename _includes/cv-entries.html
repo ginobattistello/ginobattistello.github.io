@@ -3,14 +3,16 @@
   Usage: {% assign entries = site.data.experience %}{% include cv-entries.html %}
   Set {% assign plain = true %} before the include for regular-weight titles (reset with false).
 {% endcomment %}
+{% assign previous_stage = nil %}
 {% for e in entries %}
-<div class="cv-entry">
+<div class="cv-entry{% if e.stage and previous_stage and e.stage != previous_stage %} cv-stage-start{% endif %}">
   <div class="cv-date">{{ e.date }}{% if e.duration %}<span>{{ e.duration }}</span>{% endif %}</div>
   <div class="cv-body">
-    <p class="cv-title{% if plain %} cv-plain{% endif %}">{{ e.title }}{% if e.tag %} <span class="cv-tag">{{ e.tag }}</span>{% endif %}</p>
+    <p class="cv-title{% if plain %} cv-plain{% endif %}">{% if e.tag %}<span class="cv-tag">{{ e.tag }}</span> {% endif %}{% if e.url %}<a href="{{ e.url | relative_url }}">{{ e.title }}</a>{% else %}{{ e.title }}{% endif %}</p>
     {% if e.subtitle %}<p class="cv-sub">{{ e.subtitle }}</p>{% endif %}
     {% for n in e.notes %}<p class="cv-meta">{{ n }}</p>{% endfor %}
     {% if e.people or e.place %}<p class="cv-meta">{{ e.people }}{% if e.people and e.place %} · {% endif %}{{ e.place }}</p>{% endif %}
   </div>
 </div>
+{% assign previous_stage = e.stage %}
 {% endfor %}

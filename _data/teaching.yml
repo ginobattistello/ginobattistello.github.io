@@ -17,9 +17,17 @@ teaching:
     subtitle: Probing creativity with an experimental approach
     place: Master iMind, PSL University
 
-# Student supervision
+# Student supervision, newest first. One entry per student.
 supervision:
-  - date: M.Sc
-    title: Methodological supervision of three M.Sc students
-  - date: B.Sc
-    title: Conceptual supervision of one B.Sc student
+  - date: "2026"
+    title: Areti Daskalou
+    subtitle: Master's student · Methodological supervision
+  - date: "2026"
+    title: Wissam Mokrani
+    subtitle: Undergraduate student · Conceptual supervision
+  - date: "2025"
+    title: Yasmin Schille
+    subtitle: Undergraduate student · Methodological supervision
+  - date: "2024"
+    title: Julie Tang
+    subtitle: Master's student · Methodological supervision

@@ -10,6 +10,8 @@ permalink: /cv-print/
   Save it as assets/cv.pdf. See README.
 {% endcomment %}
 {% assign p = site.data.profile %}
+{% assign birth_year = p.birth_year | default: false %}
+{% assign nationality = p.nationality | default: false %}
 {% assign me = p.author_name %}
 {% capture me_bold %}<strong>{{ me }}</strong>{% endcapture %}
 
@@ -23,6 +25,7 @@ permalink: /cv-print/
     <li><a href="{{ site.url }}">{{ site.url | remove: 'https://' }}</a></li>
     <li><a href="https://orcid.org/0009-0009-9355-470X">ORCID 0009-0009-9355-470X</a></li>
     <li><a href="https://scholar.google.com/citations?user=qjkSYX0AAAAJ&hl=en">Google Scholar</a> · <a href="https://github.com/ginobattistello">GitHub</a></li>
+    {% if birth_year or nationality %}<li>{% if birth_year %}Born {{ birth_year | escape }}{% endif %}{% if birth_year and nationality %} · {% endif %}{% if nationality %}Nationality: {{ nationality | escape }}{% endif %}</li>{% endif %}
   </ul>
 </header>
 
@@ -35,6 +38,20 @@ permalink: /cv-print/
   <h2>Education</h2>
   {% assign entries = site.data.education.degrees %}{% include cv-entries.html %}
 </section>
+
+{% if site.data.software.size > 0 %}
+<section>
+  <h2>Software &amp; tools</h2>
+  {% assign entries = site.data.software %}{% include cv-entries.html %}
+</section>
+{% endif %}
+
+{% if site.data.team.size > 0 %}
+<section>
+  <h2>Team responsibilities</h2>
+  {% assign entries = site.data.team %}{% include cv-entries.html %}
+</section>
+{% endif %}
 
 <section>
   <h2>Publications</h2>
@@ -77,14 +94,16 @@ permalink: /cv-print/
   {% endfor %}
 </section>
 
-<section>
+<section class="cv-keep-together">
   <h2>Training</h2>
-  {% assign entries = site.data.training %}{% include cv-entries.html %}
+  {% assign entries = site.data.education.training %}{% include cv-entries.html %}
 </section>
 
 <section>
   <h2>Teaching &amp; supervision</h2>
+  <h3>Teaching</h3>
   {% assign entries = site.data.teaching.teaching %}{% include cv-entries.html %}
+  <h3>Student supervision</h3>
   {% assign entries = site.data.teaching.supervision %}{% assign plain = true %}{% include cv-entries.html %}{% assign plain = false %}
 </section>
 
@@ -93,7 +112,7 @@ permalink: /cv-print/
   {% assign entries = site.data.education.awards %}{% include cv-entries.html %}
 </section>
 
-<section>
+<section class="cv-keep-together">
   <h2>Service &amp; outreach</h2>
   {% for g in site.data.outreach %}
   <h3>{{ g.group }}{% if g.intro %} <span class="cv-h3-note">· {{ g.intro | remove: '.' }}</span>{% endif %}</h3>

@@ -1,13 +1,16 @@
 # Research experience, newest first.
 # Fields (all optional except date and title):
-#   date, duration, title, subtitle (project title), people, place, notes (list of extra lines), url
+#   date, duration, tag, title, subtitle (project title), people, place, notes (list of extra lines), url
+#   stage (PhD, Graduate, Undergraduate) adds dividers between career stages in the printable CV.
 - date: 2023 – present
+  stage: PhD
   title: PhD Student
   subtitle: "Unravelling the impact of affective states on creativity: a neurocognitive investigation"
   people: "Supervisor: Dr. Alizée Lopez-Persem"
   place: Paris Brain Institute (ICM) – FrontLab – CreaTeam
 
 - date: 2022 – 2023
+  stage: Graduate
   duration: 6 months
   title: Graduate internship, Research assistant
   subtitle: Generalization of the role of subjective valuation in creativity
@@ -15,6 +18,7 @@
   place: Paris Brain Institute (ICM) – FrontLab – CreaTeam
 
 - date: "2022"
+  stage: Graduate
   duration: 2 months
   title: Internship
   subtitle: Electrophysiological source localization during gait inhibition
@@ -22,6 +26,7 @@
   place: Paris Brain Institute (ICM) – Experimental Neurosurgery
 
 - date: 2021 – 2022
+  stage: Graduate
   duration: 1 year
   title: Internship
   subtitle: Interpersonal synchrony as a substrate of emotion alignment
@@ -29,6 +34,7 @@
   place: Laboratory of Cognitive and Computational Neurosciences (LNC2) – Social Cognition group
 
 - date: "2021"
+  stage: Undergraduate
   title: Undergraduate internship, then Research engineer
   subtitle: Broca's involvement in language fluency
   notes:
@@ -37,6 +43,7 @@
   place: Marc Jeannerod Institute of Cognitive Sciences (ISC) – CNRS, Lyon
 
 - date: "2021"
+  stage: Undergraduate
   duration: 2 months
   title: Internship
   subtitle: Cognitive and cerebral bases of auditory hallucinations in schizophrenia
@@ -44,6 +51,7 @@
   place: Lyon Neuroscience Research Center (CRNL) – PSYR2 team
 
 - date: "2020"
+  stage: Undergraduate
   duration: 1 month
   title: Internship
   subtitle: Introduction to clinical research

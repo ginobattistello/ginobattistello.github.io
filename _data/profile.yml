@@ -2,6 +2,13 @@
 name: Gino Battistello
 initials: GB                  # shown when there is no photo
 photo:                        # e.g. /assets/img/photo.jpg (leave empty for initials)
+photo_position: center        # Adjust the portrait crop, e.g. "50% 30%".
+banner:                       # e.g. /assets/img/banner.jpg (your own photograph)
+banner_alt:                   # Describe the photograph for screen readers.
+banner_caption:               # Optional location or photo credit.
+banner_position: center       # Adjust the banner crop, e.g. "50% 40%".
+birth_year: 1999
+nationality: French
 role: PhD student in cognitive neuroscience
 affiliation: Paris Brain Institute (ICM) · FrontLab – CreaTeam
 location: Paris, France

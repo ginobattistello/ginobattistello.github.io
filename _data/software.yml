@@ -1,0 +1,6 @@
+# Software shown on the Research page and printable CV.
+- title: GBM toolbox
+  subtitle: Bayesian generative modelling of brain and behaviour in Python
+  notes:
+    - Parameter estimation, uncertainty quantification and model comparison.
+  url: https://github.com/ginobattistello/gbm
