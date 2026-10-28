@@ -17,7 +17,7 @@ permalink: /cv-print/
 
 <header class="cv-header">
   <div>
-    <h1>{{ p.name }}</h1>
+    <h1>{{ p.name }}{% if p.pronouns %} <span class="cv-pronouns">({{ p.pronouns | escape }})</span>{% endif %}</h1>
     <p class="cv-role">{{ p.role }}<br>{{ p.affiliation }}</p>
   </div>
   <ul class="cv-contact">
@@ -34,24 +34,10 @@ permalink: /cv-print/
   {% assign entries = site.data.experience %}{% include cv-entries.html %}
 </section>
 
-<section>
-  <h2>Education</h2>
-  {% assign entries = site.data.education.degrees %}{% include cv-entries.html %}
-</section>
-
-{% if site.data.software.size > 0 %}
-<section>
-  <h2>Software &amp; tools</h2>
-  {% assign entries = site.data.software %}{% include cv-entries.html %}
-</section>
-{% endif %}
-
-{% if site.data.team.size > 0 %}
 <section class="cv-keep-together">
-  <h2>Team responsibilities</h2>
-  {% assign entries = site.data.team %}{% include cv-entries.html %}
+  <h2>Awards &amp; grants</h2>
+  {% assign entries = site.data.education.awards %}{% include cv-entries.html %}
 </section>
-{% endif %}
 
 <section>
   <h2>Publications</h2>
@@ -79,6 +65,14 @@ permalink: /cv-print/
 </section>
 
 <section>
+  <h2>Teaching &amp; supervision</h2>
+  <h3 class="cv-subsection">Teaching</h3>
+  {% assign entries = site.data.teaching.teaching %}{% include cv-entries.html %}
+  <h3 class="cv-subsection cv-subsection-divider">Student supervision</h3>
+  {% assign entries = site.data.teaching.supervision %}{% assign plain = true %}{% include cv-entries.html %}{% assign plain = false %}
+</section>
+
+<section>
   <h2>Talks &amp; posters</h2>
   {% for t in site.data.presentations %}
   <div class="cv-entry">
@@ -94,25 +88,14 @@ permalink: /cv-print/
   {% endfor %}
 </section>
 
+{% if site.data.team.size > 0 %}
 <section class="cv-keep-together">
-  <h2>Training</h2>
-  {% assign entries = site.data.education.training %}{% include cv-entries.html %}
+  <h2>Team responsibilities</h2>
+  {% assign entries = site.data.team %}{% include cv-entries.html %}
 </section>
+{% endif %}
 
 <section>
-  <h2>Teaching &amp; supervision</h2>
-  <h3 class="cv-subsection">Teaching</h3>
-  {% assign entries = site.data.teaching.teaching %}{% include cv-entries.html %}
-  <h3 class="cv-subsection cv-subsection-divider">Student supervision</h3>
-  {% assign entries = site.data.teaching.supervision %}{% assign plain = true %}{% include cv-entries.html %}{% assign plain = false %}
-</section>
-
-<section class="cv-keep-together">
-  <h2>Awards &amp; grants</h2>
-  {% assign entries = site.data.education.awards %}{% include cv-entries.html %}
-</section>
-
-<section class="cv-keep-together">
   <h2>Service &amp; outreach</h2>
   {% for g in site.data.outreach %}
   <h3 class="cv-subsection{% unless forloop.first %} cv-subsection-divider{% endunless %}">{{ g.group }}{% if g.intro %} <span class="cv-h3-note">· {{ g.intro | remove: '.' }}</span>{% endif %}</h3>
@@ -121,9 +104,31 @@ permalink: /cv-print/
 </section>
 
 <section>
+  <h2>Education</h2>
+  {% assign entries = site.data.education.degrees %}{% include cv-entries.html %}
+</section>
+
+<section class="cv-keep-together">
+  <h2>Training</h2>
+  {% assign entries = site.data.education.training %}{% include cv-entries.html %}
+</section>
+
+<section>
+  <h2>Hobbies</h2>
+  {% assign entries = site.data.hobbies %}{% include cv-entries.html %}
+</section>
+
+<section>
   <h2>Languages</h2>
   <p class="cv-languages">{{ site.data.education.languages | join: " · " }}</p>
 </section>
+
+{% if site.data.software.size > 0 %}
+<section>
+  <h2>Software &amp; tools</h2>
+  {% assign entries = site.data.software %}{% include cv-entries.html %}
+</section>
+{% endif %}
 
 {% if site.data.skills.size > 0 %}
 <section class="cv-skills" aria-labelledby="cv-skills-heading">

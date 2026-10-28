@@ -16,7 +16,7 @@ _data/                 ← YOUR CONTENT (plain YAML lists — edit these most of
   teaching.yml         teaching + student supervision
   outreach.yml         service & outreach, in groups
   education.yml        degrees, training, awards and languages (Curriculum page)
-  hobbies.yml          hobbies (Curriculum page only)
+  hobbies.yml          hobbies (Curriculum page and printable CV)
   software.yml         software & tools (Research page; hidden until entries are added)
   team.yml             team responsibilities (Research page; hidden until entries are added)
   skills.yml           expertise, methods and tools (final section of the printable CV)
