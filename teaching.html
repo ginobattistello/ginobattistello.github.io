@@ -2,15 +2,21 @@
 layout: page
 title: Teaching & Mentoring
 permalink: /teaching/
+wide: true
 ---
+<div class="page-columns">
+<div>
 <section class="block">
   <h2>Teaching</h2>
   {% assign entries = site.data.teaching.teaching %}
   {% include entries.html %}
 </section>
-
+</div>
+<div>
 <section class="block">
   <h2>Student supervision</h2>
   {% assign entries = site.data.teaching.supervision %}
   {% include entries.html %}
 </section>
+</div>
+</div>

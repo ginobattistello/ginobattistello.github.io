@@ -6,11 +6,6 @@ wide: true
 ---
 <p class="cta"><a class="button" href="{{ '/assets/cv.pdf' | relative_url }}">Download full CV (PDF)</a></p>
 
-<section class="block">
-  <h2>Languages</h2>
-  <p class="languages">{{ site.data.education.languages | join: " · " }}</p>
-</section>
-
 <div class="page-columns">
 <div>
 <section class="block">
@@ -33,10 +28,10 @@ wide: true
   {% include entries.html %}
 </section>
 
+</div>
+</div>
+
 <section class="block">
-  <h2>Awards & grants</h2>
-  {% assign entries = site.data.education.awards %}
-  {% include entries.html %}
+  <h2>Languages</h2>
+  <p class="languages">{{ site.data.education.languages | join: " · " }}</p>
 </section>
-</div>
-</div>

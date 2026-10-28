@@ -47,7 +47,7 @@ permalink: /cv-print/
 {% endif %}
 
 {% if site.data.team.size > 0 %}
-<section>
+<section class="cv-keep-together">
   <h2>Team responsibilities</h2>
   {% assign entries = site.data.team %}{% include cv-entries.html %}
 </section>
@@ -107,7 +107,7 @@ permalink: /cv-print/
   {% assign entries = site.data.teaching.supervision %}{% assign plain = true %}{% include cv-entries.html %}{% assign plain = false %}
 </section>
 
-<section>
+<section class="cv-keep-together">
   <h2>Awards &amp; grants</h2>
   {% assign entries = site.data.education.awards %}{% include cv-entries.html %}
 </section>

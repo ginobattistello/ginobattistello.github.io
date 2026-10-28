@@ -6,7 +6,7 @@ wide: true
 ---
 <div class="page-columns">
 <div>
-{% assign primary_groups = 'public,conference,reviewing' | split: ',' %}
+{% assign primary_groups = 'public,conference' | split: ',' %}
 {% for group_id in primary_groups %}
 {% assign g = site.data.outreach | where: 'id', group_id | first %}
 {% if g %}{% include outreach-group.html group=g %}{% endif %}

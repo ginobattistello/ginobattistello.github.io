@@ -16,3 +16,5 @@ exclude:
   - todo.md
   - Gemfile
   - Gemfile.lock
+  - scripts
+  - exports

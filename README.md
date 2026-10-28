@@ -32,6 +32,8 @@ _includes/             reusable building blocks (header, footer, entries list, p
 assets/css/site.css    the design — colours and fonts are at the top
 assets/js/navigation.js mobile navigation toggle (all links remain available without JavaScript)
 assets/cv.pdf          the CV behind the "CV (PDF)" links
+exports/cv-editable.pptx editable A4 portrait PowerPoint CV (local export)
+scripts/export_cv_pptx.py generates the PowerPoint from the same YAML content
 ```
 
 ## Everyday edits
@@ -48,6 +50,24 @@ If a value contains a colon followed by a space, wrap it in quotes: `title: "Cre
 3. Save it as `assets/cv.pdf` (replacing the old one), then commit and push again.
 
 The printable page's look is in `assets/css/cv-print.css`; its layout is `cv-print.html`.
+
+**Edit the CV in PowerPoint**: open `exports/cv-editable.pptx`. Each slide is an A4
+portrait page. Text, coloured labels and skills tables are editable. Each dated
+entry is grouped so you can move it as one block; click into a group to edit its
+text or ungroup it to reposition individual parts. PowerPoint edits are independent
+of the website's YAML content.
+
+To generate a fresh PowerPoint after updating the site content:
+
+```bash
+python3 -m venv .venv-cv
+.venv-cv/bin/python -m pip install -r scripts/requirements-cv.txt
+.venv-cv/bin/python scripts/export_cv_pptx.py --output exports/cv-new.pptx
+```
+
+The exporter preserves existing files. Use a new output name for a fresh copy, or
+pass `--overwrite` to deliberately replace it. `exports/` and `scripts/` are excluded
+from the built website; the public CV download remains the PDF.
 
 **Add a portrait or banner**: put your own photographs in `assets/img/`, then update
 `_data/profile.yml`:
