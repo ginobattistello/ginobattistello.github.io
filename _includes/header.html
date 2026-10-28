@@ -1,10 +1,15 @@
 <header class="site-header">
   <nav class="nav" aria-label="Main">
     <a class="brand" href="{{ '/' | relative_url }}">{{ site.data.profile.name }}</a>
-    <ul>
+    <button class="nav-toggle" type="button" hidden aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation menu">
+      <span class="nav-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span>Menu</span>
+    </button>
+    <ul id="site-navigation">
       {% for item in site.data.navigation %}
       <li><a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
       {% endfor %}
     </ul>
   </nav>
 </header>
+<script src="{{ '/assets/js/navigation.js' | relative_url }}" defer></script>

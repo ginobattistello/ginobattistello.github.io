@@ -1,23 +1,32 @@
 ---
 layout: page
-title: CV
+title: Curriculum
 permalink: /cv/
-lead: Education, training and awards. Research, publications, talks, teaching and outreach each have their own page.
+wide: true
 ---
 <p class="cta"><a class="button" href="{{ '/assets/cv.pdf' | relative_url }}">Download full CV (PDF)</a></p>
-{% assign p = site.data.profile %}
-{% assign birth_year = p.birth_year | default: false %}
-{% assign nationality = p.nationality | default: false %}
-{% if birth_year or nationality %}
-<p class="profile-details">{% if birth_year %}Born {{ birth_year | escape }}{% endif %}{% if birth_year and nationality %} · {% endif %}{% if nationality %}Nationality: {{ nationality | escape }}{% endif %}</p>
-{% endif %}
 
+<section class="block">
+  <h2>Languages</h2>
+  <p class="languages">{{ site.data.education.languages | join: " · " }}</p>
+</section>
+
+<div class="page-columns">
+<div>
 <section class="block">
   <h2>Education</h2>
   {% assign entries = site.data.education.degrees %}
   {% include entries.html %}
 </section>
 
+<section class="block">
+  <h2>Hobbies</h2>
+  {% assign entries = site.data.hobbies %}
+  {% include entries.html %}
+</section>
+</div>
+
+<div>
 <section class="block">
   <h2>Summer schools & additional training</h2>
   {% assign entries = site.data.education.training %}
@@ -29,8 +38,5 @@ lead: Education, training and awards. Research, publications, talks, teaching an
   {% assign entries = site.data.education.awards %}
   {% include entries.html %}
 </section>
-
-<section class="block">
-  <h2>Languages</h2>
-  <p class="languages">{{ site.data.education.languages | join: " · " }}</p>
-</section>
+</div>
+</div>

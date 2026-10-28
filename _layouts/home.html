@@ -22,7 +22,7 @@ layout: default
   <div class="portrait monogram" aria-hidden="true">{{ p.initials }}</div>
   {% endif %}
   <div class="hero-text">
-    <h1>{{ p.name }}</h1>
+    <h1 class="profile-name">{{ p.name }}{% if p.pronouns %} <span class="pronouns">({{ p.pronouns | escape }})</span>{% endif %}</h1>
     <p class="role">{{ p.role }}<br>{{ p.affiliation }}</p>
     {% if birth_year or nationality %}
     <p class="profile-details">{% if birth_year %}Born {{ birth_year | escape }}{% endif %}{% if birth_year and nationality %} · {% endif %}{% if nationality %}Nationality: {{ nationality | escape }}{% endif %}</p>

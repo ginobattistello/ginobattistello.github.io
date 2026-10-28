@@ -1,0 +1,7 @@
+{% assign group = include.group %}
+<section class="block">
+  <h2>{{ group.group }}</h2>
+  {% if group.intro %}<p class="muted">{{ group.intro }}</p>{% endif %}
+  {% assign entries = group.items %}
+  {% include entries.html %}
+</section>

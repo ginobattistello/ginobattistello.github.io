@@ -1,23 +1,24 @@
-# Ongoing work
+# Ongoing work (need external information)
+- [ ] (ongoing) Link the Halphen interview. URL not yet available; add it to `_data/outreach.yml` when ready.
 
-- [x] Add a colour portrait with adjustable head-and-shoulders framing on the home page.
-- [x] Add the water photograph as a responsive home-page banner, with descriptive alt text.
-- [x] Add year of birth: 1999, on the home page and CV.
-- [x] Add nationality: French, on the home page and CV.
-- [x] Add small dividers between PhD and Graduate, and between Graduate and Undergraduate in the printable CV and CV PDF.
-- [x] Reorganise service & outreach:
-  - Add VOLUNTEER, ORGANISER and CO-ORGANISER labels before titles, matching the presentation labels.
-  - Simplify conference and event names.
-  - Correct the bipolar disorder roundtable role to Organiser.
-- [x] Name supervised students and order them by year:
-  - 2026 Areti Daskalou, master's student — methodological supervision.
-  - 2026 Wissam Mokrani, undergraduate student — conceptual supervision.
-  - 2025 Yasmin Schille, undergraduate student — methodological supervision.
-  - 2024 Julie Tang, master's student — methodological supervision.
-- [x] Add GRANTS and AWARDS labels before award titles on the website and CV.
-- [x] Add a peer-reviewing section for Creativity Research Journal.
-- [x] Add the Grand Prix Halphen 2025 (témoignages) interview listing, Philippe & Maria Halphen Foundation.
-- [ ] Link the Halphen interview. URL not yet available; add it to `_data/outreach.yml` when ready.
-- [x] Complete the GBM toolbox section on the Research page and CV, with a description from its README and a link to https://github.com/ginobattistello/gbm.
-- [x] Add team roles on the Research page and CV: meeting manager since 2024, social event organiser for 2025–2026.
+# Implemented
+- [x] add pronouns (he/him) in small after my name in the "Home" page
+- [x] GBM toolbox: precise the full name + indicate under that i am the developer
+- [x] smartphone format of the different sections is not optimal, do something with a toggle on the side we can click to see the different pages and access them
+- [x] for the page "Research", do a 2 columns arrangement with "RESEARCH EXPERIENCE" on the left, then "TEAM RESPONSABILITIES" on the right with "AWARDS & GRANTS" under, then "SOFTWARE & TOOLS" under again.
+- [x] add the Doctoral scholarship from Sorbonne University i get in 2023 with the label "GRANTS"
+- [x] update "TEAM RESPONSABILITIES" "Meeting manager" stopped in 2025 and "Social event organiser" is still present
+- [x] for the page "CV", rename it "Curriculum" (same for page title), and put the section "LANGUAGES" above "EDUCATION" section. Here you can skip the "Born 1999 · Nationality: French" as it is redundant with the "Home" page.
+- [x] create a page "Contact" with the information from the "Home": Name, current localisation, professionnal email, pronouns (he/him)
+- [x] delete the introduction sentence for the page "CV" : "Education, training and awards. Research, publications, talks, teaching and outreach each have their own page."
+- [x] for the page "CV" (so "Curriculum"), do a 2 columns arrangement with "EDUCATION" on the left, then "SUMMER SCHOOLS & ADDITIONAL TRAINING" on the right. On the left, under "EDUCATION" at the bottom, create a section "HOBBIES" with the following items:
+  - 2024-present: Luta livre/Freestyle wrestling
+  - 2023-present: semi-professional photography
+  - 2022-present: running (half-marathon level)
+- [x] Rename "Experience in associations" as "Para-professional activities" and add for "Peer-to-peer prevention & risk reduction" the items with a tag "CERTIFICATE"
+  - Mental Health First Aid (MHFA)
+  - Sexual and gender-based violence
+  - Drug consumption: stigma & risk reduction
+- [x] for "Experience in associations" (so "Para-professional activities"), under "Head of the Treasury", add the amount "40K/year"
+- [x] for "Service & Outreach" page, do a 2 columns arrangement with "PUBLIC OUTREACH & SCIENCE COMMUNICATION" on the left, with "CONFERENCE ORGANISATION" and "PEER REVIEWING" under, then "Para-professional activities" on the right.
 

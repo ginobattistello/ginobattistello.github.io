@@ -1,5 +1,6 @@
 # Service & outreach, as groups. Each group has a heading and its own list of items (newest first).
 - group: Conference organisation
+  id: conference
   items:
     - date: "2025"
       tag: Volunteer
@@ -12,6 +13,7 @@
       title: SfNC meeting
 
 - group: Public outreach & science communication
+  id: public
   items:
     - date: "2025"
       tag: Co-organiser
@@ -39,10 +41,12 @@
       title: MasterClass on creativity
       place: Paris Brain Institute
 
-- group: "Experience in associations"
+- group: Para-professional activities
+  id: para-professional
   items:
     - date: 2023 – 2025
       title: Head of the Treasury
+      subtitle: "Budget managed: €40,000/year"
       place: Ajité·es – Association of young researchers at the Paris Brain Institute
     - date: "2025"
       title: Head of the Listening Unit (support for well-being at work)
@@ -53,8 +57,13 @@
     - date: "2019 – 2022"
       title: Peer-to-peer prevention & risk reduction
       place: Claude Bernard University Lyon 1 – Health center
+      certificates:
+        - Mental Health First Aid (MHFA)
+        - Sexual and gender-based violence
+        - "Drug consumption: stigma & risk reduction"
 
 - group: Peer reviewing
+  id: reviewing
   items:
     - title: Creativity Research Journal
       date: "2025"

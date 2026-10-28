@@ -15,21 +15,22 @@ _data/                 ← YOUR CONTENT (plain YAML lists — edit these most of
   presentations.yml    Talks & Posters (one entry per abstract, with all its venues)
   teaching.yml         teaching + student supervision
   outreach.yml         service & outreach, in groups
-  training.yml         Training page: summer schools, courses, online programmes
-  education.yml        degrees, awards, languages (CV page)
+  education.yml        degrees, training, awards and languages (Curriculum page)
+  hobbies.yml          hobbies (Curriculum page only)
   software.yml         software & tools (Research page; hidden until entries are added)
   team.yml             team responsibilities (Research page; hidden until entries are added)
   skills.yml           expertise, methods and tools (final section of the printable CV)
                        (all of these also feed the printable CV at /cv-print/)
 
 index.md               home page bio (Markdown)
-research.html  publications.html  talks.html  training.html  teaching.html
-outreach.html  cv.html  cv-print.html (printable CV, not in the menu)
+research.html  publications.html  talks.html  teaching.html
+outreach.html  cv.html (Curriculum)  contact.html  cv-print.html (printable CV, not in the menu)
                        one file per page: a title + which data to show
 
 _layouts/              page skeletons (default, page, home)
 _includes/             reusable building blocks (header, footer, entries list, publication)
 assets/css/site.css    the design — colours and fonts are at the top
+assets/js/navigation.js mobile navigation toggle (all links remain available without JavaScript)
 assets/cv.pdf          the CV behind the "CV (PDF)" links
 ```
 
@@ -66,7 +67,9 @@ vertical position in the source photograph; `photo_zoom` controls the image widt
 inside the frame (`100%` for a close-up, larger values for a wider photograph).
 The banner appears above the home-page bio; `banner_position` controls its crop.
 Leave `photo` or `banner` empty to hide that image. Set `birth_year` and `nationality` in the same file
-to show them on the home page, CV page and printable CV; empty fields stay hidden.
+to show them on the home page and printable CV; empty fields stay hidden.
+Set `pronouns` in the same file to display them beside your name on Home and on Contact.
+The Contact page also uses the profile's name, location and professional email.
 
 **Labels and CV dividers**: dated entries accept an optional `tag`, such as `Volunteer`,
 `Organiser`, `Grants` or `Awards`, displayed before the title on both the site and CV.
@@ -82,6 +85,12 @@ to hide its section.
 lines of details. Use `label` for a bold prefix and `level: tools` for supporting
 software or tool names in smaller grey text. The table starts on a new final page
 of the printable CV. Replace the list with `[]` to hide it.
+
+**Page layouts**: Research, Curriculum and Service & Outreach use two columns on
+wide screens and stack into one column on smaller screens. `wide: true` in a page's
+front matter enables the wider content area. Outreach groups have stable `id` values
+used to place them in the requested columns. Entries can include a `certificates`
+list; each certificate receives a label on the website and printable CV.
 
 ## Add a new page
 

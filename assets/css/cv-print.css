@@ -89,6 +89,9 @@ h3 {
   color: var(--accent); border: .5pt solid var(--accent); border-radius: 1mm; padding: .35mm 1.2mm; margin-left: 1mm; vertical-align: .25mm;
 }
 .cv-languages { padding-left: 26mm; }
+.cv-certificates { list-style: none; margin: .8mm 0 0; padding: 0; color: var(--muted); font-size: 8pt; }
+.cv-certificates li { margin-top: .6mm; break-inside: avoid; }
+.cv-certificates .cv-tag { margin-right: 1.2mm; }
 
 /* Expertise: domain headings, category labels, then methods and supporting tools. */
 .cv-skills { margin-top: 6mm; }

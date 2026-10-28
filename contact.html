@@ -1,0 +1,15 @@
+---
+layout: page
+title: Contact
+permalink: /contact/
+---
+{% assign p = site.data.profile %}
+<section class="block">
+  <h2>Get in touch</h2>
+  <dl class="contact-details">
+    <div><dt>Name</dt><dd>{{ p.name | escape }}</dd></div>
+    <div><dt>Pronouns</dt><dd>{{ p.pronouns | escape }}</dd></div>
+    <div><dt>Location</dt><dd>{{ p.location | escape }}</dd></div>
+    <div><dt>Professional email</dt><dd><a href="mailto:{{ p.email | escape }}">{{ p.email | escape }}</a></dd></div>
+  </dl>
+</section>

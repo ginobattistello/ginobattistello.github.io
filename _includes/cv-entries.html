@@ -12,6 +12,13 @@
     {% if e.subtitle %}<p class="cv-sub">{{ e.subtitle }}</p>{% endif %}
     {% for n in e.notes %}<p class="cv-meta">{{ n }}</p>{% endfor %}
     {% if e.people or e.place %}<p class="cv-meta">{{ e.people }}{% if e.people and e.place %} · {% endif %}{{ e.place }}</p>{% endif %}
+    {% if e.certificates %}
+    <ul class="cv-certificates">
+      {% for certificate in e.certificates %}
+      <li><span class="cv-tag cv-tag-certificate">Certificate</span> {{ certificate | escape }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
   </div>
 </div>
 {% assign previous_stage = e.stage %}

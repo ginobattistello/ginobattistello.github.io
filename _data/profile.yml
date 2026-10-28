@@ -1,5 +1,6 @@
 # Who you are: used on the home page, in the header and in the footer.
 name: Gino Battistello
+pronouns: he/him
 initials: GB                  # shown when there is no photo
 photo: /assets/img/portrait.jpg
 photo_position: "75% 30%"      # Position of the face in the source photograph.

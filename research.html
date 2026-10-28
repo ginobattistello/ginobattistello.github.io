@@ -2,10 +2,28 @@
 layout: page
 title: Research
 permalink: /research/
+wide: true
 ---
+<div class="page-columns research-columns">
+<div>
 <section class="block">
   <h2>Research experience</h2>
   {% assign entries = site.data.experience %}
+  {% include entries.html %}
+</section>
+</div>
+<div>
+{% if site.data.team.size > 0 %}
+<section class="block">
+  <h2>Team responsibilities</h2>
+  {% assign entries = site.data.team %}
+  {% include entries.html %}
+</section>
+{% endif %}
+
+<section class="block">
+  <h2>Awards &amp; grants</h2>
+  {% assign entries = site.data.education.awards %}
   {% include entries.html %}
 </section>
 
@@ -16,11 +34,5 @@ permalink: /research/
   {% include entries.html %}
 </section>
 {% endif %}
-
-{% if site.data.team.size > 0 %}
-<section class="block">
-  <h2>Team responsibilities</h2>
-  {% assign entries = site.data.team %}
-  {% include entries.html %}
-</section>
-{% endif %}
+</div>
+</div>

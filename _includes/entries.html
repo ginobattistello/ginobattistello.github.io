@@ -18,6 +18,13 @@
       {% for n in e.notes %}<p class="entry-meta">{{ n }}</p>{% endfor %}
       {% if e.people %}<p class="entry-meta">{{ e.people }}</p>{% endif %}
       {% if e.place %}<p class="entry-meta">{{ e.place }}</p>{% endif %}
+      {% if e.certificates %}
+      <ul class="entry-certificates">
+        {% for certificate in e.certificates %}
+        <li><span class="tag tag-certificate">Certificate</span> <span>{{ certificate | escape }}</span></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
     </div>
   </li>
   {% endfor %}

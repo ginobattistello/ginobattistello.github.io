@@ -1,6 +1,7 @@
 # Software shown on the Research page and printable CV.
-- title: GBM toolbox
-  subtitle: Bayesian generative modelling of brain and behaviour in Python
+- title: Generative Bayesian/Brain/Behavior Modelling (GBM) toolbox
+  subtitle: "Developer: Gino Battistello"
   notes:
+    - Bayesian generative modelling of brain and behaviour in Python.
     - Parameter estimation, uncertainty quantification and model comparison.
   url: https://github.com/ginobattistello/gbm

@@ -2,12 +2,18 @@
 layout: page
 title: Service & Outreach
 permalink: /outreach/
+wide: true
 ---
-{% for g in site.data.outreach %}
-<section class="block">
-  <h2>{{ g.group }}</h2>
-  {% if g.intro %}<p class="muted">{{ g.intro }}</p>{% endif %}
-  {% assign entries = g.items %}
-  {% include entries.html %}
-</section>
+<div class="page-columns">
+<div>
+{% assign primary_groups = 'public,conference,reviewing' | split: ',' %}
+{% for group_id in primary_groups %}
+{% assign g = site.data.outreach | where: 'id', group_id | first %}
+{% if g %}{% include outreach-group.html group=g %}{% endif %}
 {% endfor %}
+</div>
+<div>
+{% assign g = site.data.outreach | where: 'id', 'para-professional' | first %}
+{% if g %}{% include outreach-group.html group=g %}{% endif %}
+</div>
+</div>
